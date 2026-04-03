@@ -6,8 +6,7 @@ require("dotenv").config();
 const { requirementsRouter } = require("./routes/requirements");
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 5000;
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://saikumaryadav712_db_user:4tEALPAJFr5IzMH1@cluster0.olipiwz.mongodb.net/?appName=Cluster0
-"
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://saikumaryadav712_db_user:4tEALPAJFr5IzMH1@cluster0.olipiwz.mongodb.net/?appName=Cluster0"
 const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || "http://localhost:3000";
 
 if (!MONGODB_URI) {
